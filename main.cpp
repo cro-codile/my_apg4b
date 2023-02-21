@@ -1,13 +1,17 @@
-#include <iostream>
-#include <string>
-
+#include <bits/stdc++.h>
 using namespace std;
-
+ 
 int main() {
-    cout << "Hello World\n";
-    cout << "Input: ";
-    string data;
-    getline(cin, data);
-    cout << "Output: " << data << "\n\n";
-    return 0;
+
+  int n,a;
+
+  string ans = "No";
+  cin >> n >> a;
+
+  int mod = n % 500;
+  if(mod == 0 || a >= mod){
+    ans = "Yes";
+  }
+
+  cout << ans << endl;
 }
